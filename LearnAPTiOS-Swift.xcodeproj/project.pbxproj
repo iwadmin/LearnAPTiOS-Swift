@@ -21,6 +21,10 @@
 		E416A90D19C07DD000D53B0D /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A90A19C07DD000D53B0D /* ColorHelper.swift */; };
 		E416A90E19C07DD000D53B0D /* DefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A90B19C07DD000D53B0D /* DefaultsHelper.swift */; };
 		E416A90F19C07DD000D53B0D /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A90C19C07DD000D53B0D /* DeviceHelper.swift */; };
+		E416A91719C07E6F00D53B0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A91319C07E6F00D53B0D /* LoginViewController.swift */; };
+		E416A91819C07E6F00D53B0D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E416A91419C07E6F00D53B0D /* LoginViewController.xib */; };
+		E416A91919C07E6F00D53B0D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A91519C07E6F00D53B0D /* RegisterViewController.swift */; };
+		E416A91A19C07E6F00D53B0D /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E416A91619C07E6F00D53B0D /* RegisterViewController.xib */; };
 		E4253EAD19C075DC00ED3333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4253EAC19C075DC00ED3333 /* AppDelegate.swift */; };
 		E4253EAF19C075DC00ED3333 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4253EAE19C075DC00ED3333 /* ViewController.swift */; };
 		E4253EB219C075DC00ED3333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4253EB019C075DC00ED3333 /* Main.storyboard */; };
@@ -57,6 +61,10 @@
 		E416A90A19C07DD000D53B0D /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		E416A90B19C07DD000D53B0D /* DefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsHelper.swift; sourceTree = "<group>"; };
 		E416A90C19C07DD000D53B0D /* DeviceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
+		E416A91319C07E6F00D53B0D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E416A91419C07E6F00D53B0D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E416A91519C07E6F00D53B0D /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E416A91619C07E6F00D53B0D /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		E4253EA719C075DC00ED3333 /* LearnAPTiOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LearnAPTiOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4253EAB19C075DC00ED3333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4253EAC19C075DC00ED3333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +136,25 @@
 			name = Helper;
 			sourceTree = "<group>";
 		};
+		E416A91119C07E3F00D53B0D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E416A91219C07E5000D53B0D /* User */,
+			);
+			name = Component;
+			sourceTree = "<group>";
+		};
+		E416A91219C07E5000D53B0D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E416A91319C07E6F00D53B0D /* LoginViewController.swift */,
+				E416A91419C07E6F00D53B0D /* LoginViewController.xib */,
+				E416A91519C07E6F00D53B0D /* RegisterViewController.swift */,
+				E416A91619C07E6F00D53B0D /* RegisterViewController.xib */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		E4253E9E19C075DC00ED3333 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +180,7 @@
 		E4253EA919C075DC00ED3333 /* LearnAPTiOS-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				E416A91119C07E3F00D53B0D /* Component */,
 				E416A91019C07DDE00D53B0D /* Helper */,
 				E416A8DC19C07BC200D53B0D /* Model */,
 				E4253EAC19C075DC00ED3333 /* AppDelegate.swift */,
@@ -273,6 +301,8 @@
 			files = (
 				E4253EB219C075DC00ED3333 /* Main.storyboard in Resources */,
 				E4253EB419C075DC00ED3333 /* Images.xcassets in Resources */,
+				E416A91819C07E6F00D53B0D /* LoginViewController.xib in Resources */,
+				E416A91A19C07E6F00D53B0D /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,10 +362,12 @@
 				E416A90D19C07DD000D53B0D /* ColorHelper.swift in Sources */,
 				E416A90419C07D1D00D53B0D /* Question.swift in Sources */,
 				E416A90619C07D1D00D53B0D /* Section.swift in Sources */,
+				E416A91919C07E6F00D53B0D /* RegisterViewController.swift in Sources */,
 				E416A90219C07D1D00D53B0D /* Option.swift in Sources */,
 				E416A8FE19C07D1D00D53B0D /* Comment.swift in Sources */,
 				E416A90519C07D1D00D53B0D /* Quiz.swift in Sources */,
 				E4253EAD19C075DC00ED3333 /* AppDelegate.swift in Sources */,
+				E416A91719C07E6F00D53B0D /* LoginViewController.swift in Sources */,
 				E416A90F19C07DD000D53B0D /* DeviceHelper.swift in Sources */,
 				E416A90119C07D1D00D53B0D /* Item.swift in Sources */,
 				E416A90019C07D1D00D53B0D /* InfoPack.swift in Sources */,
