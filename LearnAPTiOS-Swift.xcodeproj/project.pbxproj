@@ -18,6 +18,9 @@
 		E416A90619C07D1D00D53B0D /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A8FB19C07D1D00D53B0D /* Section.swift */; };
 		E416A90719C07D1D00D53B0D /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A8FC19C07D1D00D53B0D /* Tag.swift */; };
 		E416A90819C07D1D00D53B0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A8FD19C07D1D00D53B0D /* User.swift */; };
+		E416A90D19C07DD000D53B0D /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A90A19C07DD000D53B0D /* ColorHelper.swift */; };
+		E416A90E19C07DD000D53B0D /* DefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A90B19C07DD000D53B0D /* DefaultsHelper.swift */; };
+		E416A90F19C07DD000D53B0D /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416A90C19C07DD000D53B0D /* DeviceHelper.swift */; };
 		E4253EAD19C075DC00ED3333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4253EAC19C075DC00ED3333 /* AppDelegate.swift */; };
 		E4253EAF19C075DC00ED3333 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4253EAE19C075DC00ED3333 /* ViewController.swift */; };
 		E4253EB219C075DC00ED3333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4253EB019C075DC00ED3333 /* Main.storyboard */; };
@@ -51,6 +54,9 @@
 		E416A8FB19C07D1D00D53B0D /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		E416A8FC19C07D1D00D53B0D /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		E416A8FD19C07D1D00D53B0D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E416A90A19C07DD000D53B0D /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		E416A90B19C07DD000D53B0D /* DefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsHelper.swift; sourceTree = "<group>"; };
+		E416A90C19C07DD000D53B0D /* DeviceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
 		E4253EA719C075DC00ED3333 /* LearnAPTiOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LearnAPTiOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4253EAB19C075DC00ED3333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4253EAC19C075DC00ED3333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +118,16 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		E416A91019C07DDE00D53B0D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E416A90A19C07DD000D53B0D /* ColorHelper.swift */,
+				E416A90B19C07DD000D53B0D /* DefaultsHelper.swift */,
+				E416A90C19C07DD000D53B0D /* DeviceHelper.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		E4253E9E19C075DC00ED3333 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +153,7 @@
 		E4253EA919C075DC00ED3333 /* LearnAPTiOS-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				E416A91019C07DDE00D53B0D /* Helper */,
 				E416A8DC19C07BC200D53B0D /* Model */,
 				E4253EAC19C075DC00ED3333 /* AppDelegate.swift */,
 				E4253EAE19C075DC00ED3333 /* ViewController.swift */,
@@ -311,12 +328,15 @@
 				E416A90319C07D1D00D53B0D /* Properties.swift in Sources */,
 				E416A8FF19C07D1D00D53B0D /* GameMode.swift in Sources */,
 				E4253EAF19C075DC00ED3333 /* ViewController.swift in Sources */,
+				E416A90E19C07DD000D53B0D /* DefaultsHelper.swift in Sources */,
+				E416A90D19C07DD000D53B0D /* ColorHelper.swift in Sources */,
 				E416A90419C07D1D00D53B0D /* Question.swift in Sources */,
 				E416A90619C07D1D00D53B0D /* Section.swift in Sources */,
 				E416A90219C07D1D00D53B0D /* Option.swift in Sources */,
 				E416A8FE19C07D1D00D53B0D /* Comment.swift in Sources */,
 				E416A90519C07D1D00D53B0D /* Quiz.swift in Sources */,
 				E4253EAD19C075DC00ED3333 /* AppDelegate.swift in Sources */,
+				E416A90F19C07DD000D53B0D /* DeviceHelper.swift in Sources */,
 				E416A90119C07D1D00D53B0D /* Item.swift in Sources */,
 				E416A90019C07D1D00D53B0D /* InfoPack.swift in Sources */,
 			);
